@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.BIND_VPN_SERVICE"
         tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
-    <!-- Permissions that only exist on newer APIs will be ignored on older ones -->
+    <!-- Permissions that only exist on newer APIs will be ignored on older ones --> 
     <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" tools:targetApi="O"/>
     <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" tools:targetApi="R"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
@@ -15,7 +15,7 @@
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" tools:targetApi="UPSIDE_DOWN_CAKE"/>
     <uses-permission android:name="android.permission.CAMERA"/>
-    <!-- הוספת ההרשאה החסרה לשינוי הגדרות מערכת (כמו סיבוב מסך) -->
+    <!-- הוספת ההרשאה החסרה לשינוי הגדרות מערכת (כמו סיבוב מסך) --> 
     <uses-permission android:name="android.permission.WRITE_SETTINGS" tools:ignore="ProtectedPermissions"/>
     <uses-feature android:name="android.hardware.camera" android:required="false"/>
     <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
@@ -71,12 +71,17 @@
             <meta-data
                 android:name="android.app.device_admin"
                 android:resource="@xml/device_admin" />
+            
+            <meta-data
+                android:name="android.app.support_transfer_ownership"
+                android:value="true" />
+
             <intent-filter>
                 <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
             </intent-filter>
         </receiver>
 
-        <!-- Receiver is now disabled by default and enabled programmatically on setup -->
+        <!-- Receiver is now disabled by default and enabled programmatically on setup --> 
         <receiver
             android:name=".boot.BootCompletedReceiver"
             android:directBootAware="true"
