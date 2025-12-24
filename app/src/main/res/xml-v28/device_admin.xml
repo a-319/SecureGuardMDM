@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<device-admin>
+<device-admin xmlns:android="http://schemas.android.com/apk/res/android">
     <!--
       This file is for API 28 (Android 9) and above.
       It includes all policies, including those not available on older versions.
@@ -23,4 +23,8 @@
         <!-- Policy for blocking the lock screen -->
         <disable-keyguard-features />
     </uses-policies>
+
+        <support-transfer-ownership />
+
+    
 </device-admin>
