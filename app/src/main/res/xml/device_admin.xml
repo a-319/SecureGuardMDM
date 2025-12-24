@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<device-admin>
+<device-admin xmlns:android="http://schemas.android.com/apk/res/android">
     <!--
       This file declares all the sensitive policies the app might use.
       This is the base version for APIs < 28.
@@ -23,4 +23,6 @@
 
         <!-- The disable-screen-capture policy is in the xml-v28 version of this file -->
     </uses-policies>
+
+    <support-transfer-ownership />
 </device-admin>
