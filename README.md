@@ -7,7 +7,7 @@ test dpc. owndroid. offline mdm. dhizuku. תומכות בהעברת הבעלות
 אך עד כה כל אפליקציות החסימה שפותחו, לא תמכו בקבלת הרשאת הניהול בירושה, כעת ברוך השם הצלחתי להגדיר זאת בגרסה הזו.
 
 
-הנה הקישור להורדה: https://github.com/a-319/SecureGuardMDM/releases/download/0.4.5/Abloq-release.apk
+הנה הקישור להורדה: https://github.com/a-319/SecureGuardMDM/releases/download/Beta/Abloq-release.apk
 
 הדבר יעיל לצורך:
 
